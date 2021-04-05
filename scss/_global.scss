@@ -1,0 +1,158 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+    min-height: 0;
+    min-width: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;   
+    background: $dark;
+    text-transform: uppercase;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+ul,
+li{
+   margin: 0;
+   padding: 0;
+   list-style: none; 
+}
+.wrapper{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.active-menu {
+    opacity: 1 !important;
+}
+/* DEMO-SPECIFIC STYLES анимация набора текста*/
+.typewriter{
+  width: 100%;
+  color: #fff;
+  overflow: hidden; 
+  border-right: 4px solid $gold; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: 3px; 
+  -webkit-animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+          animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+
+@-webkit-keyframes typing {
+  from { width: 0 }
+  to { width: 90% }
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 90% }
+}
+@-webkit-keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $gold }
+}
+
+h1{
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    /*padding-bottom: 45px;*/
+    margin: 0;
+}
+.sub-text{
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: none;
+    padding-top: 45px;
+}
+h2{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+}
+.services__supline{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+}
+.info__subtext{
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: none;
+}
+.info__item{
+    span{
+        color: $dark;
+        text-transform: none;
+        text-align: center;
+    }
+    span:nth-child(1){
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 75px;
+        letter-spacing: 0.05em;
+    }
+    span:nth-child(2){
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.05em;
+    }
+    span:nth-child(3){
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+.footer{
+    &__adress{
+        font-size: 14px;
+        line-height: 16px;
+        color: $white-grey;
+        opacity: 0.8;
+        text-transform: none;
+        margin: 0 0 10px 0;
+    }
+    &__tel{
+        font-size: 14px!important;
+        line-height: 16px!important;
+        color: $white-grey!important;
+    }
+    a{
+        font-size: 14px;
+        line-height: 16px;
+        color: $dark;
+        text-transform: none;  
+    }
+    
+}
+.line{
+    margin-bottom: 40px;
+}
+.btn{
+    text-align: center;
+    background-color: $gold;
+    padding: 18px 48px;
+}

@@ -15,13 +15,24 @@ $(function(){
     $('.vacancies-slider').slick({
         dots: false,
         arrows: true,
-        /* fade: true, */
         /* appendArrows: '.arrows', */
         nextArrow: '<div class="arrows__text arrows__text-right">след<img class="slider-arrows__right" src="img/arrows-right.svg" alt=""></div>',
         prevArrow: '<div class="arrows__text arrows__text-left"><img class="slider-arrows__left" src="img/arrows-left.svg" alt="">назад</div>',
+        fade: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1
+    });
+    $('.banner__slider').slick({
+        dots: false,
+        arrows: false,
+        /* appendArrows: '.arrows', */
+        fade: true,
+        infinite: true,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToScroll: 1,
     });
     //--------------------------------------------------
     //Плавный скрол
@@ -32,5 +43,7 @@ $(function(){
         }, 1000);
         return false;
     });
+    //--------------------------------------------------
+
 
 });

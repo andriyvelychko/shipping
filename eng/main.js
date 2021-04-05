@@ -23,6 +23,17 @@ $(function(){
         slidesToShow: 1,
         slidesToScroll: 1
     });
+    $('.banner__slider').slick({
+        dots: false,
+        arrows: false,
+        /* appendArrows: '.arrows', */
+        fade: true,
+        infinite: true,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToScroll: 1,
+    });
     //--------------------------------------------------
     //Плавный скрол
     var $page = $('html, body');

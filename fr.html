@@ -22,13 +22,14 @@
                 </div>
             </div>
         </div>
+        <div class="header__menu-bg"></div>
             <div class="wrapper">
                 <div class="header-wrap">
                     <div class="logo">
                         <a href="index.html">
                             <img src="img/logo.webp" alt="">
                         </a>
-                        <a href="#">
+                        <a href="#footer">
                             <img src="img/marker.webp" alt="">
                             Nos bureaux
                         </a>
@@ -56,11 +57,23 @@
                     </nav>
                 </div>
             </div>
+        </div>
     </header>
     <section class="banner">
-        <div class="wrapper">
-            <div class="banner__text">
-                <h1>Transport de marchandises</h1>
+        <style>
+            @media (max-width: 476px){
+                h1{font-size: 34px!important;}
+            }
+            @media (max-width: 376px){
+                h1{font-size: 25px!important;}
+            }
+        </style>
+        <div class="banner__slider">
+            <div class="banner__slider-item">
+                <img src="img/banner-bg.webp" alt="">
+                <div class="wrapper banner__position">
+            <div class="banner__text" style="margin: 0 40px;">
+                <h1 class="typewriter">Transport de marchandises</h1>
                 <p class="sub-text">
                     Transport de marchandises volumineuses en Russie et en Europe. Expédition complète de fret, assurance, emballage et
                     stockage des marchandises
@@ -68,6 +81,35 @@
             </div>
             <a href="#vacancies" class="mouse" id="mouse"></a>
         </div>
+            </div>
+            <div class="banner__slider-item">
+                <img src="img/avia_1.jpg" alt="">
+                <div class="wrapper banner__position">
+            <div class="banner__text" style="margin: 0 40px;">
+                <h1 class="typewriter">Transport de marchandises</h1>
+                <p class="sub-text">
+                    Transport de marchandises volumineuses en Russie et en Europe. Expédition complète de fret, assurance, emballage et
+                    stockage des marchandises
+                </p>
+            </div>
+            <a href="#vacancies" class="mouse" id="mouse"></a>
+        </div>
+            </div>
+            <div class="banner__slider-item">
+                <img src="img/14446707.jpg" alt="">
+                <div class="wrapper banner__position">
+            <div class="banner__text" style="margin: 0 40px;">
+                <h1 class="typewriter">Transport de marchandises</h1>
+                <p class="sub-text">
+                    Transport de marchandises volumineuses en Russie et en Europe. Expédition complète de fret, assurance, emballage et
+                    stockage des marchandises
+                </p>
+            </div>
+            <a href="#vacancies" class="mouse" id="mouse"></a>
+        </div>
+            </div>
+        </div>
+        
     </section>
     <section class="vacancies" id="vacancies">
         <div class="wrapper">
@@ -95,14 +137,31 @@
                                 <rect width="90" height="6" fill="#C8A35F" />
                             </svg>
                             <h2>
-                                camionnage en europe
+                                le transport aérien en Europe
                             </h2>
                             <p class="sub-text">
                                 Les pays de l'Union européenne, ainsi que l'Ukraine, la Biélorussie avec tous les documents.
                             </p>
                             <a href="#" class="btn">plus de détails</a>
                         </div>
-                        <img class="vacancies__img" src="img/slide-img-1.webp" alt="">
+                        <img class="vacancies__img" src="img/kisspng-airplane-aircraft-clip-art-aereo-5b4676eb3bfcd5.8218472715313446192457.webp" alt="">
+                    </div>
+                </div>
+                <div class="vacancies-slider">
+                    <div class="vacancies__wrap">
+                        <div class="vacancies__text">
+                            <svg class="line" width="90" height="6" viewBox="0 0 90 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="90" height="6" fill="#C8A35F" />
+                            </svg>
+                            <h2>
+                                Transport ferroviaire en Europe
+                            </h2>
+                            <p class="sub-text">
+                                Les pays de l'Union européenne, ainsi que l'Ukraine, la Biélorussie avec tous les documents.
+                            </p>
+                            <a href="#" class="btn">подробнее</a>
+                        </div>
+                        <img class="vacancies__img" src="img/klipartz.com.webp" alt="">
                     </div>
                 </div>
             </div>
@@ -236,11 +295,11 @@
                 <img class="footer__logo" src="img/logo-footer.webp" alt="">
                 <div class="footer__item">
                     <p class="footer__adress">123456, Saint-Pétersbourg, perspective Nevsky 127</p>
-                    <a href="#">sales@log.ru</a>
+                    <a href="mailto:sales@log.ru">sales@log.ru</a>
                 </div>
                 <div class="footer__item">
-                    <p class="footer__tel">+7 (812) 344-56-65</p>
-                    <p class="footer__tel">+7 (812) 355-56-65</p>
+                    <a class="footer__tel" href="tel:88001234567">8 (800) 123-45-67</a><br>
+                    <a class="footer__tel" href="tel:88001234567">8 (800) 123-45-68</a>
                 </div>
             </div>
         </div>
